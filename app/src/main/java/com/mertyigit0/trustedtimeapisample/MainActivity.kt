@@ -121,7 +121,7 @@ fun TrustedTimeScreen() {
                 // Trusted Time Card
                 TimeDisplayCard(
                     title = "Trusted Time",
-                    time = TimeUtils.formatTime(trustedTimeMillis),
+                    time = TimeUtils.formatTimeWithMillis(trustedTimeMillis),
                     subtitle = "From Google's secure time servers",
                     icon = TimeIcons.TrustedTime
                 )
@@ -129,7 +129,7 @@ fun TrustedTimeScreen() {
                 // System Time Card
                 TimeDisplayCard(
                     title = "System Time",
-                    time = TimeUtils.formatTime(systemTimeMillis),
+                    time = TimeUtils.formatTimeWithMillis(systemTimeMillis),
                     subtitle = "From device's local clock",
                     icon = TimeIcons.SystemTime
                 )

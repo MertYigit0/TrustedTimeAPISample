@@ -10,12 +10,20 @@ import kotlin.math.abs
 object TimeUtils {
     
     private val dateFormat = SimpleDateFormat(Constants.DATE_FORMAT_PATTERN, Locale.getDefault())
+    private val dateFormatWithMillis = SimpleDateFormat(Constants.DATE_FORMAT_WITH_MILLIS_PATTERN, Locale.getDefault())
     
     /**
      * Format milliseconds to a readable date string
      */
     fun formatTime(timeMillis: Long): String {
         return dateFormat.format(Date(timeMillis))
+    }
+    
+    /**
+     * Format milliseconds to a readable date string with millisecond precision
+     */
+    fun formatTimeWithMillis(timeMillis: Long): String {
+        return dateFormatWithMillis.format(Date(timeMillis))
     }
     
     /**

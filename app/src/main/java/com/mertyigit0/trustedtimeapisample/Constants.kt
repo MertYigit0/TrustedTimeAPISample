@@ -14,6 +14,7 @@ object Constants {
     
     // Date format
     const val DATE_FORMAT_PATTERN = "yyyy-MM-dd HH:mm:ss"
+    const val DATE_FORMAT_WITH_MILLIS_PATTERN = "yyyy-MM-dd HH:mm:ss.SSS"
     
     // Error messages
     const val ERROR_CLIENT_INIT_FAILED = "TrustedTime client initialization failed. Please check your internet connection and Google Play Services."
